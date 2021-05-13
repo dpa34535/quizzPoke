@@ -1,0 +1,80 @@
+/* fonte */
+@font-face {
+    font-family: oitobit;
+    src: url('../fonte/PixelOperator8-Bold.woff2') format("WOFF2");
+}
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: oitobit, Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100%;
+}
+/* container pokemon */
+.container-pokemon{
+    background: url("../img/fundo.jpg") center / cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#logo-pokemon{
+    justify-self: flex-start;
+    background: url("../img/quem-e-esse.jpg") center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 180px;
+    margin: 10px 0 20px 0;
+}
+/* imagem do pokemon */
+#img-pokemon{
+    pointer-events: none;
+    width: 200px;
+    height: 200px;
+}
+.brightness{
+    filter: brightness(0);
+}
+/* botao pokemon */
+#botao-pokemon, .botao-pokemon-dois{
+    margin-top: 70px;
+    box-shadow: 2px 2px 2px black, 2px 2px 2px, 2px 2px 2px;
+    background-image: url("../img/pokebola.jpg");
+    padding: 0 25px 0 70px;
+    font-size: 12px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -4px;
+    background-position-x: 17px;
+    border: none;
+    background-color: rgb(211, 210, 210);
+}
+#botao-pokemon:hover, .botao-pokemon-dois:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#botao-pokemon:active, .botao-pokemon-dois:active{
+    transform: scale(0.98);
+}
+/* margin diferente */
+.botao-pokemon-dois{
+    margin-top: 20px;
+}
+/* display das opções */
+.options{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+/* classe display none */
+.somecom{
+    display: none;
+}
+/* texto da resposta */
+.resposta-Texto{
+    margin-top: 10px;
+    text-align: center;
+}
